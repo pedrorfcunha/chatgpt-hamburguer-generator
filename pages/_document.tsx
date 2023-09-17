@@ -6,8 +6,9 @@ export default function Document() {
       <Head>
         <meta
           name="description"
-          content="The premiere coffee delivery service."
+          content="The AI tool to create personalized hamburguers."
         />
+        <link rel="icon" href="/hamburguer-svg.svg" />
       </Head>
       <body>
         <Main />

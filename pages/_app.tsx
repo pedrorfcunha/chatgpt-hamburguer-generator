@@ -1,23 +1,25 @@
-import '../styles/globals.css'
-import Footer from '../components/Footer'
-import Head from 'next/head'
-import { Montserrat } from 'next/font/google'
+import '../styles/globals.css';
+
+import Head from 'next/head';
+import { Montserrat } from 'next/font/google';
+import { ChakraProvider } from '@chakra-ui/react';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-montserrat',
-})
+});
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>The Coffee House</title>
+        <title>The Hamburguer Generator!</title>
       </Head>
       <main className={`${montserrat.variable} font-sans`}>
-        <Component {...pageProps} />
-        <Footer />
+        <ChakraProvider>
+          <Component {...pageProps} />
+        </ChakraProvider>
       </main>
     </>
-  )
+  );
 }
