@@ -1,12 +1,12 @@
 import Header from '../components/Header';
-import Form from '../components/Form';
+import Main from '../components/Main';
 import Footer from '../components/Footer';
 
-export default function Main() {
+export default function Body() {
   return (
     <>
       <Header />
-      <Form />
+      <Main />
       <Footer />
     </>
   );

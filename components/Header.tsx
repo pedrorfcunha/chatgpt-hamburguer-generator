@@ -28,9 +28,11 @@ export default function Header() {
             </h1>
 
             <div className="mx-auto mt-10 max-w-xs flex max-w-none justify-center">
-              <button className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-orange-600 shadow-sm hover:bg-orange-100 sm:px-8">
-                Create yours
-              </button>
+              <a href="#form">
+                <button className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-orange-600 shadow-sm hover:bg-orange-100 sm:px-8">
+                  Create yours
+                </button>
+              </a>
             </div>
           </div>
         </div>
