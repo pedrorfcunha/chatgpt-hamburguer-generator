@@ -1,31 +1,57 @@
-# Example Next.js app with Salesforce Commerce Cloud
+<h1 align="center">
+   The Hamburguer Generator
+</h1>
 
-This example shows how to create a headless ecommerce application using Next.js, [Salesforce commerce cloud](https://www.salesforce.com/products/commerce-cloud/overview/), and [Tailwind](https://tailwindcss.com).
+---
 
-## Deploy your own
+<h2 align="center">
+  A clean, simple and AI powered website to create unique hamburguers!
+</h2>
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or view the demo [here](https://salesforce-cloud-commerce.vercel.app/)
+---
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-sfcc&project-name=with-sfcc&repository-name=with-sfcc&env=SFDC_CLIENT_ID,SFDC_SECRET,SFDC_ORGANIZATIONID,SFDC_SHORTCODE,SFDC_SITEID&envDescription=API%20Keys%20from%20SFCC%20needed%20to%20run%20this%20application.)
+## Check the Live
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Live URL: https://ai-hamburguer-generator.netlify.app/
 
-## How to use
+## Preview
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example::
+<img src="/public/live-url-preview.png">
 
-```bash
- npx create-next-app --example with-sfcc nextjs-sfcc-app
+## Description
+
+This is a project that contains a simple and responsive interface to create personalized hamburguers using AI tools (OpenAI API)
+
+## Getting Started
+
+See the instructions down below at [Installation](#installation)
+and [Running / Development](#running-/-development) to get a copy of the
+project up and running on your local machine.
+
+#### Technologies
+
+- React.js
+- Next.js
+- Typescript
+- Tailwind
+- Chakra UI
+- Serveless functions (OpenAI API integration)
+
+## Installation
+
+- `git clone https://github.com/pedrorfcunha/chatgpt-hamburguer-generator.git` this repository
+- `cd chatgpt-hamburguer-generator`
+- `npm install` or `yarn install`
+
+## Running / Development
+
+### Env Variables
+
+Create a .env file in the root and add the following
+
+```
+OPENAI_API_KEY = YOUR_OPEN_AI_API_KEY
 ```
 
-```bash
-yarn create next-app --example with-sfcc nextjs-sfcc-app
-```
-
-```bash
-pnpm create next-app --example with-sfcc nextjs-sfcc-app
-```
-
-## References
-
-- SDK: https://github.com/SalesforceCommerceCloud/commerce-sdk
+- `npm run dev` or `yarn dev`
+- Visit your app at [http://localhost:3000](http://localhost:3000).
